@@ -1,99 +1,105 @@
 ﻿using System;
+using System.Collections;
 using System.Windows.Forms;
 
 namespace StudentRegistrationApplication
 {
-	public partial class frmStudentRegistration : Form
-	{
-		public frmStudentRegistration()
-		{
-			InitializeComponent();
-			LoadDate();
-		}
+    public partial class frmStudentRegistration : Form
+    {
+        public frmStudentRegistration()
+        {
+            InitializeComponent();
+            LoadDate();
+            LoadPrograms();
+        }
 
-		private void LoadDate()
-		{
-			for (int i = 1; i <= 12; i++)
-				monthSelect.Items.Add(i.ToString());
+        private void LoadDate()
+        {
+            
+            string[] months = {
+                "January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+            };
 
-			for (int i = DateTime.Now.Year; i >= 1950; i--)
-				yearSelect.Items.Add(i.ToString());
+            foreach (string month in months)
+            {
+                monthSelect.Items.Add(month);
+            }
 
-			monthSelect.DropDownStyle = ComboBoxStyle.DropDownList;
-			daySelect.DropDownStyle = ComboBoxStyle.DropDownList;
-			yearSelect.DropDownStyle = ComboBoxStyle.DropDownList;
+            for (int i = DateTime.Now.Year; i >= 1950; i--)
+                yearSelect.Items.Add(i.ToString());
 
-			monthSelect.SelectedIndexChanged += AdjustDays;
-			yearSelect.SelectedIndexChanged += AdjustDays;
-		}
+            monthSelect.DropDownStyle = ComboBoxStyle.DropDownList;
+            daySelect.DropDownStyle = ComboBoxStyle.DropDownList;
+            yearSelect.DropDownStyle = ComboBoxStyle.DropDownList;
 
-		private void AdjustDays(object sender, EventArgs e)
-		{
-			if (monthSelect.SelectedIndex == -1 || yearSelect.SelectedIndex == -1)
-				return;
 
-			int month = int.Parse(monthSelect.Text);
-			int year = int.Parse(yearSelect.Text);
+            monthSelect.SelectedIndexChanged += AdjustDays;
+            yearSelect.SelectedIndexChanged += AdjustDays;
+        }
 
-			int daysInMonth = DateTime.DaysInMonth(year, month);
+        private void LoadPrograms()
+        {
+            ArrayList programs = new ArrayList();
+            programs.Add("Bachelor of Science in Computer Science");
+            programs.Add("Bachelor of Science in Information Technology");
+            programs.Add("Bachelor of Science in Information Systems");
+            programs.Add("Bachelor of Science in Computer Engineering");
+            foreach (string program in programs)
+            {
+                selectProgrambox.Items.Add(program);
+            }
 
-			int currentDay = daySelect.SelectedIndex != -1 ? int.Parse(daySelect.Text) : 0;
+            selectProgrambox.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
 
-			daySelect.Items.Clear();
+        private void AdjustDays(object sender, EventArgs e)
+        {
+            if (monthSelect.SelectedIndex == -1 || yearSelect.SelectedIndex == -1)
+                return;
 
-			for (int i = 1; i <= daysInMonth; i++)
-				daySelect.Items.Add(i.ToString());
+            int month = monthSelect.SelectedIndex + 1;
+            int year = int.Parse(yearSelect.Text);
 
-			if (currentDay <= daysInMonth && currentDay != 0)
-				daySelect.SelectedItem = currentDay.ToString();
-		}
+            int daysInMonth = DateTime.DaysInMonth(year, month);
+            int currentDay = daySelect.SelectedIndex != -1 ? int.Parse(daySelect.Text) : 0;
 
-		private void registerButton_Click(object sender, EventArgs e)
-		{
-			string lastName = lastNameBox.Text.Trim();
-			string firstName = firstNameBox.Text.Trim();
-			string middleName = middleNameBox.Text.Trim();
+            daySelect.Items.Clear();
 
-			string gender = "";
+            for (int i = 1; i <= daysInMonth; i++)
+                daySelect.Items.Add(i.ToString());
 
-			if (maleRadio.Checked)
-				gender = "Male";
-			else if (femaleRadio.Checked)
-				gender = "Female";
 
-			if (lastName == "" || firstName == "" || middleName == "" ||
-				gender == "" ||
-				daySelect.SelectedIndex == -1 ||
-				monthSelect.SelectedIndex == -1 ||
-				yearSelect.SelectedIndex == -1)
-			{
-				MessageBox.Show("Please complete all required fields!",
-								"Missing Information",
-								MessageBoxButtons.OK,
-								MessageBoxIcon.Warning);
-				return;
-			}
+            if (currentDay <= daysInMonth && currentDay != 0)
+                daySelect.SelectedItem = currentDay.ToString();
+        }
 
-			string day = daySelect.Text;
-			string month = monthSelect.Text;
-			string year = yearSelect.Text;
+        private void registerButton_Click(object sender, EventArgs e)
+        {
+            string lastName = lastNameBox.Text.Trim();
+            string firstName = firstNameBox.Text.Trim();
+            string middleName = middleNameBox.Text.Trim();
+            string program = selectProgrambox.SelectedItem?.ToString();
+            string day = daySelect.SelectedItem?.ToString();
+            string month = monthSelect.SelectedItem?.ToString();
+            string year = yearSelect.SelectedItem?.ToString();
 
-			MessageBox.Show(
-				"Student name: " + firstName + " " + middleName + " " + lastName +
-				"\nGender: " + gender +
-				"\nDate of birth: " + day + "/" + month + "/" + year,
-				"Student Information",
-				MessageBoxButtons.OK,
-				MessageBoxIcon.Information);
+            string gender = maleRadio.Checked ? "Male" : (femaleRadio.Checked ? "Female" : "");
 
-			lastNameBox.Clear();
-			firstNameBox.Clear();
-			middleNameBox.Clear();
-			maleRadio.Checked = false;
-			femaleRadio.Checked = false;
-			daySelect.Items.Clear();
-			monthSelect.SelectedIndex = -1;
-			yearSelect.SelectedIndex = -1;
-		}
-	}
+            if (string.IsNullOrEmpty(lastName) || string.IsNullOrEmpty(firstName) ||
+                string.IsNullOrEmpty(gender) || string.IsNullOrEmpty(program) ||
+                daySelect.SelectedIndex == -1 || monthSelect.SelectedIndex == -1 || yearSelect.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please complete all required fields!", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                MessageBox.Show($"Name: {firstName} {middleName} {lastName}" +
+                                $"\nGender: {gender}" +
+                                $"\nDate of birth: {month} {day}, {year}" +
+                                $"\nProgram: {program}",
+                                "Student Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+    }
 }
