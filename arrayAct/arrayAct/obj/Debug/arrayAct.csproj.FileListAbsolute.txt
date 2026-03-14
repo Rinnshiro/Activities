@@ -1,0 +1,10 @@
+C:\Users\edoria.419982\source\repos\arrayAct\arrayAct\obj\Debug\arrayAct.csproj.AssemblyReference.cache
+C:\Users\edoria.419982\source\repos\arrayAct\arrayAct\obj\Debug\arrayAct.Form1.resources
+C:\Users\edoria.419982\source\repos\arrayAct\arrayAct\obj\Debug\arrayAct.Properties.Resources.resources
+C:\Users\edoria.419982\source\repos\arrayAct\arrayAct\obj\Debug\arrayAct.csproj.GenerateResource.cache
+C:\Users\edoria.419982\source\repos\arrayAct\arrayAct\obj\Debug\arrayAct.csproj.CoreCompileInputs.cache
+C:\Users\edoria.419982\source\repos\arrayAct\arrayAct\bin\Debug\arrayAct.exe.config
+C:\Users\edoria.419982\source\repos\arrayAct\arrayAct\bin\Debug\arrayAct.exe
+C:\Users\edoria.419982\source\repos\arrayAct\arrayAct\bin\Debug\arrayAct.pdb
+C:\Users\edoria.419982\source\repos\arrayAct\arrayAct\obj\Debug\arrayAct.exe
+C:\Users\edoria.419982\source\repos\arrayAct\arrayAct\obj\Debug\arrayAct.pdb
