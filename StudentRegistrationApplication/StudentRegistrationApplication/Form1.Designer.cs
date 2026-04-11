@@ -1,33 +1,25 @@
 ﻿namespace StudentRegistrationApplication
 {
-	partial class frmStudentRegistration
-	{
-		/// <summary>
-		/// Required designer variable.
-		/// </summary>
-		private System.ComponentModel.IContainer components = null;
+    partial class frmStudentRegistration
+    {
+        
+        private System.ComponentModel.IContainer components = null;
 
-		/// <summary>
-		/// Clean up any resources being used.
-		/// </summary>
-		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && (components != null))
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
+        
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
 
-		#region Windows Form Designer generated code
+            base.Dispose(disposing);
+        }
 
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
+        #region
+
+        private void InitializeComponent()
+        {
             this.lastNameBox = new System.Windows.Forms.TextBox();
             this.firstNameBox = new System.Windows.Forms.TextBox();
             this.middleNameBox = new System.Windows.Forms.TextBox();
@@ -45,6 +37,10 @@
             this.registerButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.selectProgrambox = new System.Windows.Forms.ComboBox();
+            this.studentPictureBox = new System.Windows.Forms.PictureBox();
+            this.uploadPhotoButton = new System.Windows.Forms.Button();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            ((System.ComponentModel.ISupportInitialize)(this.studentPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // lastNameBox
@@ -165,7 +161,6 @@
             // 
             // daySelect
             // 
-            this.daySelect.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.daySelect.FormattingEnabled = true;
             this.daySelect.Location = new System.Drawing.Point(11, 307);
             this.daySelect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -176,7 +171,6 @@
             // 
             // monthSelect
             // 
-            this.monthSelect.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.monthSelect.FormattingEnabled = true;
             this.monthSelect.Location = new System.Drawing.Point(96, 307);
             this.monthSelect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -187,7 +181,6 @@
             // 
             // yearSelect
             // 
-            this.yearSelect.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.yearSelect.FormattingEnabled = true;
             this.yearSelect.Location = new System.Drawing.Point(182, 307);
             this.yearSelect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -198,10 +191,8 @@
             // 
             // registerButton
             // 
-            this.registerButton.BackColor = System.Drawing.Color.Crimson;
+            this.registerButton.BackColor = System.Drawing.Color.Red;
             this.registerButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.registerButton.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerButton.ForeColor = System.Drawing.Color.Black;
             this.registerButton.Location = new System.Drawing.Point(11, 424);
             this.registerButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.registerButton.Name = "registerButton";
@@ -224,7 +215,6 @@
             // 
             // selectProgrambox
             // 
-            this.selectProgrambox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.selectProgrambox.FormattingEnabled = true;
             this.selectProgrambox.Location = new System.Drawing.Point(11, 374);
             this.selectProgrambox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -232,13 +222,39 @@
             this.selectProgrambox.Size = new System.Drawing.Size(287, 27);
             this.selectProgrambox.TabIndex = 16;
             // 
+            // studentPictureBox
+            // 
+            this.studentPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.studentPictureBox.Location = new System.Drawing.Point(320, 84);
+            this.studentPictureBox.Name = "studentPictureBox";
+            this.studentPictureBox.Size = new System.Drawing.Size(180, 180);
+            this.studentPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.studentPictureBox.TabIndex = 17;
+            this.studentPictureBox.TabStop = false;
+            // 
+            // uploadPhotoButton
+            // 
+            this.uploadPhotoButton.Location = new System.Drawing.Point(320, 270);
+            this.uploadPhotoButton.Name = "uploadPhotoButton";
+            this.uploadPhotoButton.Size = new System.Drawing.Size(180, 30);
+            this.uploadPhotoButton.TabIndex = 18;
+            this.uploadPhotoButton.Text = "Upload Photo";
+            this.uploadPhotoButton.UseVisualStyleBackColor = true;
+            this.uploadPhotoButton.Click += new System.EventHandler(this.uploadPhotoButton_Click);
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
+            // 
             // frmStudentRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gainsboro;
             this.BackgroundImage = global::StudentRegistrationApplication.Properties.Resources.pngtree_simple_gradient_on_gray_background_image_557021;
-            this.ClientSize = new System.Drawing.Size(310, 499);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(525, 499);
+            this.Controls.Add(this.studentPictureBox);
+            this.Controls.Add(this.uploadPhotoButton);
             this.Controls.Add(this.selectProgrambox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.registerButton);
@@ -257,34 +273,38 @@
             this.Controls.Add(this.firstNameBox);
             this.Controls.Add(this.lastNameBox);
             this.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "frmStudentRegistration";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Registration";
+            this.Load += new System.EventHandler(this.frmStudentRegistration_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.studentPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
-		}
+        }
 
-		#endregion
+        #endregion
 
-		private System.Windows.Forms.TextBox lastNameBox;
-		private System.Windows.Forms.TextBox firstNameBox;
-		private System.Windows.Forms.TextBox middleNameBox;
-		private System.Windows.Forms.Label headline;
-		private System.Windows.Forms.Label lastName;
-		private System.Windows.Forms.Label firstName;
-		private System.Windows.Forms.Label middleName;
-		private System.Windows.Forms.RadioButton maleRadio;
-		private System.Windows.Forms.RadioButton femaleRadio;
-		private System.Windows.Forms.Label genderSelect;
-		private System.Windows.Forms.Label dateSelect;
-		private System.Windows.Forms.ComboBox daySelect;
-		private System.Windows.Forms.ComboBox monthSelect;
-		private System.Windows.Forms.ComboBox yearSelect;
-		private System.Windows.Forms.Button registerButton;
+        private System.Windows.Forms.TextBox lastNameBox;
+        private System.Windows.Forms.TextBox firstNameBox;
+        private System.Windows.Forms.TextBox middleNameBox;
+        private System.Windows.Forms.Label headline;
+        private System.Windows.Forms.Label lastName;
+        private System.Windows.Forms.Label firstName;
+        private System.Windows.Forms.Label middleName;
+        private System.Windows.Forms.RadioButton maleRadio;
+        private System.Windows.Forms.RadioButton femaleRadio;
+        private System.Windows.Forms.Label genderSelect;
+        private System.Windows.Forms.Label dateSelect;
+        private System.Windows.Forms.ComboBox daySelect;
+        private System.Windows.Forms.ComboBox monthSelect;
+        private System.Windows.Forms.ComboBox yearSelect;
+        private System.Windows.Forms.Button registerButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox selectProgrambox;
+        private System.Windows.Forms.PictureBox studentPictureBox;
+        private System.Windows.Forms.Button uploadPhotoButton;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
     }
 }
-
