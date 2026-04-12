@@ -1,0 +1,10 @@
+C:\Users\raine\source\repos\Edoria_StudentGradeAnalyzer\Edoria_StudentGradeAnalyzer\bin\Debug\Edoria_StudentGradeAnalyzer.exe.config
+C:\Users\raine\source\repos\Edoria_StudentGradeAnalyzer\Edoria_StudentGradeAnalyzer\bin\Debug\Edoria_StudentGradeAnalyzer.exe
+C:\Users\raine\source\repos\Edoria_StudentGradeAnalyzer\Edoria_StudentGradeAnalyzer\bin\Debug\Edoria_StudentGradeAnalyzer.pdb
+C:\Users\raine\source\repos\Edoria_StudentGradeAnalyzer\Edoria_StudentGradeAnalyzer\obj\Debug\Edoria_StudentGradeAnalyzer.csproj.AssemblyReference.cache
+C:\Users\raine\source\repos\Edoria_StudentGradeAnalyzer\Edoria_StudentGradeAnalyzer\obj\Debug\Edoria_StudentGradeAnalyzer.Form1.resources
+C:\Users\raine\source\repos\Edoria_StudentGradeAnalyzer\Edoria_StudentGradeAnalyzer\obj\Debug\Edoria_StudentGradeAnalyzer.Properties.Resources.resources
+C:\Users\raine\source\repos\Edoria_StudentGradeAnalyzer\Edoria_StudentGradeAnalyzer\obj\Debug\Edoria_StudentGradeAnalyzer.csproj.GenerateResource.cache
+C:\Users\raine\source\repos\Edoria_StudentGradeAnalyzer\Edoria_StudentGradeAnalyzer\obj\Debug\Edoria_StudentGradeAnalyzer.csproj.CoreCompileInputs.cache
+C:\Users\raine\source\repos\Edoria_StudentGradeAnalyzer\Edoria_StudentGradeAnalyzer\obj\Debug\Edoria_StudentGradeAnalyzer.exe
+C:\Users\raine\source\repos\Edoria_StudentGradeAnalyzer\Edoria_StudentGradeAnalyzer\obj\Debug\Edoria_StudentGradeAnalyzer.pdb
