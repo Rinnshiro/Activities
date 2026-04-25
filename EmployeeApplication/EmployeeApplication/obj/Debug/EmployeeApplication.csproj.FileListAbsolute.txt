@@ -1,0 +1,10 @@
+C:\Users\edoria.419982\source\repos\EmployeeApplication\EmployeeApplication\bin\Debug\EmployeeApplication.exe.config
+C:\Users\edoria.419982\source\repos\EmployeeApplication\EmployeeApplication\bin\Debug\EmployeeApplication.exe
+C:\Users\edoria.419982\source\repos\EmployeeApplication\EmployeeApplication\bin\Debug\EmployeeApplication.pdb
+C:\Users\edoria.419982\source\repos\EmployeeApplication\EmployeeApplication\obj\Debug\EmployeeApplication.csproj.AssemblyReference.cache
+C:\Users\edoria.419982\source\repos\EmployeeApplication\EmployeeApplication\obj\Debug\EmployeeApplication.frmEmployeeDatabase.resources
+C:\Users\edoria.419982\source\repos\EmployeeApplication\EmployeeApplication\obj\Debug\EmployeeApplication.Properties.Resources.resources
+C:\Users\edoria.419982\source\repos\EmployeeApplication\EmployeeApplication\obj\Debug\EmployeeApplication.csproj.GenerateResource.cache
+C:\Users\edoria.419982\source\repos\EmployeeApplication\EmployeeApplication\obj\Debug\EmployeeApplication.csproj.CoreCompileInputs.cache
+C:\Users\edoria.419982\source\repos\EmployeeApplication\EmployeeApplication\obj\Debug\EmployeeApplication.exe
+C:\Users\edoria.419982\source\repos\EmployeeApplication\EmployeeApplication\obj\Debug\EmployeeApplication.pdb
