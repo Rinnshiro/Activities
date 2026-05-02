@@ -1,0 +1,10 @@
+C:\Users\edoria.419982\source\repos\LibraryCatalog\LibraryCatalog\bin\Debug\LibraryCatalog.exe.config
+C:\Users\edoria.419982\source\repos\LibraryCatalog\LibraryCatalog\bin\Debug\LibraryCatalog.exe
+C:\Users\edoria.419982\source\repos\LibraryCatalog\LibraryCatalog\bin\Debug\LibraryCatalog.pdb
+C:\Users\edoria.419982\source\repos\LibraryCatalog\LibraryCatalog\obj\Debug\LibraryCatalog.csproj.AssemblyReference.cache
+C:\Users\edoria.419982\source\repos\LibraryCatalog\LibraryCatalog\obj\Debug\LibraryCatalog.Properties.Resources.resources
+C:\Users\edoria.419982\source\repos\LibraryCatalog\LibraryCatalog\obj\Debug\LibraryCatalog.csproj.GenerateResource.cache
+C:\Users\edoria.419982\source\repos\LibraryCatalog\LibraryCatalog\obj\Debug\LibraryCatalog.csproj.CoreCompileInputs.cache
+C:\Users\edoria.419982\source\repos\LibraryCatalog\LibraryCatalog\obj\Debug\LibraryCatalog.exe
+C:\Users\edoria.419982\source\repos\LibraryCatalog\LibraryCatalog\obj\Debug\LibraryCatalog.pdb
+C:\Users\edoria.419982\source\repos\LibraryCatalog\LibraryCatalog\obj\Debug\LibraryCatalog.LibraryBookCatalog.resources
