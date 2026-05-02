@@ -1,0 +1,10 @@
+C:\Users\edoria.419982\source\repos\Quiz09\Quiz09\obj\Debug\Quiz09.csproj.AssemblyReference.cache
+C:\Users\edoria.419982\source\repos\Quiz09\Quiz09\obj\Debug\Quiz09.Form1.resources
+C:\Users\edoria.419982\source\repos\Quiz09\Quiz09\obj\Debug\Quiz09.Properties.Resources.resources
+C:\Users\edoria.419982\source\repos\Quiz09\Quiz09\obj\Debug\Quiz09.csproj.GenerateResource.cache
+C:\Users\edoria.419982\source\repos\Quiz09\Quiz09\obj\Debug\Quiz09.csproj.CoreCompileInputs.cache
+C:\Users\edoria.419982\source\repos\Quiz09\Quiz09\bin\Debug\Quiz09.exe.config
+C:\Users\edoria.419982\source\repos\Quiz09\Quiz09\bin\Debug\Quiz09.exe
+C:\Users\edoria.419982\source\repos\Quiz09\Quiz09\bin\Debug\Quiz09.pdb
+C:\Users\edoria.419982\source\repos\Quiz09\Quiz09\obj\Debug\Quiz09.exe
+C:\Users\edoria.419982\source\repos\Quiz09\Quiz09\obj\Debug\Quiz09.pdb
