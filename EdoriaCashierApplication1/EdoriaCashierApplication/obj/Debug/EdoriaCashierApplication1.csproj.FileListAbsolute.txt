@@ -1,0 +1,10 @@
+C:\Users\edoria.419982\source\repos\EdoriaCashierApplication\EdoriaCashierApplication\obj\Debug\EdoriaCashierApplication1.csproj.AssemblyReference.cache
+C:\Users\edoria.419982\source\repos\EdoriaCashierApplication\EdoriaCashierApplication\obj\Debug\EdoriaCashierApplication1.frmPurchaseDiscountedItem.resources
+C:\Users\edoria.419982\source\repos\EdoriaCashierApplication\EdoriaCashierApplication\obj\Debug\EdoriaCashierApplication.Properties.Resources.resources
+C:\Users\edoria.419982\source\repos\EdoriaCashierApplication\EdoriaCashierApplication\obj\Debug\EdoriaCashierApplication1.csproj.GenerateResource.cache
+C:\Users\edoria.419982\source\repos\EdoriaCashierApplication\EdoriaCashierApplication\obj\Debug\EdoriaCashierApplication1.csproj.CoreCompileInputs.cache
+C:\Users\edoria.419982\source\repos\EdoriaCashierApplication\EdoriaCashierApplication\obj\Debug\EdoriaCashierApplication.exe
+C:\Users\edoria.419982\source\repos\EdoriaCashierApplication\EdoriaCashierApplication\obj\Debug\EdoriaCashierApplication.pdb
+C:\Users\edoria.419982\source\repos\EdoriaCashierApplication\EdoriaCashierApplication\bin\Debug\EdoriaCashierApplication.exe.config
+C:\Users\edoria.419982\source\repos\EdoriaCashierApplication\EdoriaCashierApplication\bin\Debug\EdoriaCashierApplication.exe
+C:\Users\edoria.419982\source\repos\EdoriaCashierApplication\EdoriaCashierApplication\bin\Debug\EdoriaCashierApplication.pdb
