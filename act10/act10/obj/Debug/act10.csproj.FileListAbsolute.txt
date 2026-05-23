@@ -1,0 +1,9 @@
+C:\Users\edoria.419982\source\repos\act10\act10\bin\Debug\act10.exe.config
+C:\Users\edoria.419982\source\repos\act10\act10\bin\Debug\act10.exe
+C:\Users\edoria.419982\source\repos\act10\act10\bin\Debug\act10.pdb
+C:\Users\edoria.419982\source\repos\act10\act10\obj\Debug\act10.csproj.AssemblyReference.cache
+C:\Users\edoria.419982\source\repos\act10\act10\obj\Debug\act10.Properties.Resources.resources
+C:\Users\edoria.419982\source\repos\act10\act10\obj\Debug\act10.csproj.GenerateResource.cache
+C:\Users\edoria.419982\source\repos\act10\act10\obj\Debug\act10.csproj.CoreCompileInputs.cache
+C:\Users\edoria.419982\source\repos\act10\act10\obj\Debug\act10.exe
+C:\Users\edoria.419982\source\repos\act10\act10\obj\Debug\act10.pdb
