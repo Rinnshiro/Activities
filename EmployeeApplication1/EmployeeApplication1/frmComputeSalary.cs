@@ -28,9 +28,10 @@ namespace EmployeeApplication1
             employee.JobTitle = txtJobTitle.Text;
 
             double ratePerHour = Convert.ToDouble(txtRatePerHour.Text);
-            int totalHoursWorked = Convert.ToInt32(txtTotalHoursWorked.Text);
+            int HoursWorked = Convert.ToInt32(txtHoursWorked.Text);
 
-            double salary = employee.ComputeSalary(ratePerHour, totalHoursWorked);
+            employee.computeSalary(ratePerHour, HoursWorked);
+            double salary = employee.getSalary;
 
             lblFullName.Text = employee.FirstName + " " + employee.LastName;
             lblDepartment.Text = employee.Department;

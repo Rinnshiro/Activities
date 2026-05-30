@@ -7,3 +7,4 @@ C:\Users\edoria.419982\source\repos\EmployeeApplication1\EmployeeApplication1\ob
 C:\Users\edoria.419982\source\repos\EmployeeApplication1\EmployeeApplication1\obj\Debug\EmployeeApplication1.csproj.CoreCompileInputs.cache
 C:\Users\edoria.419982\source\repos\EmployeeApplication1\EmployeeApplication1\obj\Debug\EmployeeApplication1.exe
 C:\Users\edoria.419982\source\repos\EmployeeApplication1\EmployeeApplication1\obj\Debug\EmployeeApplication1.pdb
+C:\Users\edoria.419982\source\repos\EmployeeApplication1\EmployeeApplication1\obj\Debug\EmployeeApplication1.frmComputeSalary.resources

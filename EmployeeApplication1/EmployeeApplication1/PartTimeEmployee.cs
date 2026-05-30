@@ -9,28 +9,29 @@ namespace EmployeeNamespace
 {
     public class PartTimeEmployee : IEmployee
     {
-        private string first_name;
-        private string last_name;
+        private string Fname;
+        private string Lname;
         private string department;
-        private string job_title;
+        private string jobTitle;
+        private double salary;
 
         public string FirstName
         {
             get { 
-                return first_name; 
+                return Fname; 
             }
             set { 
-                first_name = value; 
+                Fname = value; 
             }
         }
 
         public string LastName
         {
             get { 
-                return last_name; 
+                return Lname; 
             }
             set { 
-                last_name = value; 
+                Lname = value; 
             }
         }
 
@@ -47,16 +48,22 @@ namespace EmployeeNamespace
         public string JobTitle
         {
             get {
-                return job_title; 
+                return jobTitle; 
             }
             set { 
-                job_title = value; 
+                jobTitle = value; 
+            }
+        }
+        public double getSalary
+        {
+            get { 
+                return salary; 
             }
         }
 
-        public double ComputeSalary(double ratePerHour, int totalHoursWorked)
+        public void computeSalary(double ratePerHour, int hoursWorked)
         {
-            return ratePerHour * totalHoursWorked;
+            salary = ratePerHour * hoursWorked;
         }
     }
 }

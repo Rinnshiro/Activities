@@ -21,6 +21,6 @@ namespace EmployeeInterface
             get; set; 
         }
 
-        double ComputeSalary(double ratePerHour, int totalHoursWorked);
+       void computeSalary(double ratePerHour, int HoursWorked);
     }
 }
