@@ -20,7 +20,11 @@ namespace EmployeeInterface
         string JobTitle {
             get; set; 
         }
+        double Salary
+        {
+            get; set;
+        }
 
-       void computeSalary(double ratePerHour, int HoursWorked);
+        void computeSalary(double ratePerHour, int HoursWorked);
     }
 }

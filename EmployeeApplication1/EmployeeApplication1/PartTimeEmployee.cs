@@ -54,6 +54,18 @@ namespace EmployeeNamespace
                 jobTitle = value; 
             }
         }
+        public double Salary
+        {
+            get
+            {
+                return salary;
+            }
+            set
+            {
+                salary = value;
+            }
+        }
+
         public double getSalary
         {
             get { 
